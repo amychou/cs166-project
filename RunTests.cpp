@@ -78,10 +78,14 @@ namespace {
       reportResult(Tree::name(), checkCorrectness<Tree>(kTreeSize, kNumLookups)? "Pass" : "Fail");
     }
   };
-  struct SequentialAccessTests {
-    static string name() { return "Sequential Access"; }
+  template <size_t treeSize> struct SequentialAccessTests {
+    static string name() {
+      ostringstream result;
+      result << "Sequential Access - TreeSize " << treeSize;
+      return result.str();
+    }
     template <typename Tree> void test() {
-      reportResult(Tree::name(), timeSequential<Tree>(kTreeSize));
+      reportResult(Tree::name(), timeSequential<Tree>(treeSize));
     }
   };
   struct ReverseSequentialAccessTests {
@@ -96,9 +100,13 @@ namespace {
       reportResult(Tree::name(), timeWorkingSets<Tree>(kTreeSize, kNumWorkingSets, kNumLookups));
     }
   };
-  struct UniformDistributionTests {
-    uniform_int_distribution<int> distribution{ 0, kTreeSize - 1 };
-    static string name() { return "Accessing Elements With a Uniform Distribution"; }
+  template <size_t treeSize> struct UniformDistributionTests {
+    uniform_int_distribution<int> distribution{ 0, treeSize - 1 };
+    static string name() {
+      ostringstream result;
+      result << "Accessing Elements with A Uniform Distribution - TreeSize " << treeSize;
+      return result.str();
+    }
     template <typename Tree> void test() {
       reportResult(Tree::name(), timeDistribution<Tree>(distribution, kNumLookups));
     }
@@ -224,10 +232,58 @@ namespace {
    */
   using AllTests = TypeList<
                      CorrectnessTests,
-                     SequentialAccessTests,
+                     SequentialAccessTests<(1u<<0u)>,
+                     SequentialAccessTests<(1u<<1u)>,
+                     SequentialAccessTests<(1u<<2u)>,
+                     SequentialAccessTests<(1u<<3u)>,
+                     SequentialAccessTests<(1u<<4u)>,
+                     SequentialAccessTests<(1u<<5u)>,
+                     SequentialAccessTests<(1u<<6u)>,
+                     SequentialAccessTests<(1u<<7u)>,
+                     SequentialAccessTests<(1u<<8u)>,
+                     SequentialAccessTests<(1u<<9u)>,
+                     SequentialAccessTests<(1u<<10u)>,
+                     SequentialAccessTests<(1u<<11u)>,
+                     SequentialAccessTests<(1u<<12u)>,
+                     SequentialAccessTests<(1u<<13u)>,
+                     SequentialAccessTests<(1u<<14u)>,
+                     SequentialAccessTests<(1u<<15u)>,
+                     SequentialAccessTests<(1u<<16u)>,
+                     SequentialAccessTests<(1u<<17u)>,
+                     SequentialAccessTests<(1u<<18u)>,
+                     SequentialAccessTests<(1u<<19u)>,
+                     SequentialAccessTests<(1u<<20u)>,
+                     SequentialAccessTests<(1u<<21u)>,
+                     SequentialAccessTests<(1u<<22u)>,
+                     SequentialAccessTests<(1u<<23u)>,
+                     SequentialAccessTests<(1u<<24u)>,
                      ReverseSequentialAccessTests,
                      WorkingSetTests,
-                     UniformDistributionTests,
+                     UniformDistributionTests<(1u<<0u)>,
+                     UniformDistributionTests<(1u<<1u)>,
+                     UniformDistributionTests<(1u<<2u)>,
+                     UniformDistributionTests<(1u<<3u)>,
+                     UniformDistributionTests<(1u<<4u)>,
+                     UniformDistributionTests<(1u<<5u)>,
+                     UniformDistributionTests<(1u<<6u)>,
+                     UniformDistributionTests<(1u<<7u)>,
+                     UniformDistributionTests<(1u<<8u)>,
+                     UniformDistributionTests<(1u<<9u)>,
+                     UniformDistributionTests<(1u<<10u)>,
+                     UniformDistributionTests<(1u<<11u)>,
+                     UniformDistributionTests<(1u<<12u)>,
+                     UniformDistributionTests<(1u<<13u)>,
+                     UniformDistributionTests<(1u<<14u)>,
+                     UniformDistributionTests<(1u<<15u)>,
+                     UniformDistributionTests<(1u<<16u)>,
+                     UniformDistributionTests<(1u<<17u)>,
+                     UniformDistributionTests<(1u<<18u)>,
+                     UniformDistributionTests<(1u<<19u)>,
+                     UniformDistributionTests<(1u<<20u)>,
+                     UniformDistributionTests<(1u<<21u)>,
+                     UniformDistributionTests<(1u<<22u)>,
+                     UniformDistributionTests<(1u<<23u)>,
+                     UniformDistributionTests<(1u<<24u)>,
                      ZipfianTests< 500>,
                      ZipfianTests< 750>,
                      ZipfianTests<1000>,

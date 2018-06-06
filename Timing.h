@@ -53,7 +53,7 @@ TimingResults timeDistribution(ProbabilityDistribution& gen,
   engine.seed(kRandomSeed);
 
   Timer buildTimer;
-  
+
   buildTimer.start();
   BST tree{probabilities};
   buildTimer.stop();
@@ -61,7 +61,7 @@ TimingResults timeDistribution(ProbabilityDistribution& gen,
   Timer queryTimer;
   for (std::size_t i = 0; i < numLookups; i++) {
     auto index = gen(engine);
-    
+
     queryTimer.start();
     tree.contains(index);
     queryTimer.stop();
@@ -102,7 +102,7 @@ TimingResults timeSequential(std::size_t count, int start, int step) {
   std::vector<double> probabilities = std::vector<double>(count, 1.0 / count);
 
   Timer buildTimer;
-  
+
   buildTimer.start();
   BST tree{probabilities};
   buildTimer.stop();
@@ -153,7 +153,7 @@ TimingResults timeWorkingSets(std::size_t numElems, std::size_t numSets, std::si
   std::vector<double> probabilities(numElems, 1.0 / numElems);
 
   Timer buildTimer;
-  
+
   buildTimer.start();
   BST tree{probabilities};
   buildTimer.stop();
@@ -162,7 +162,7 @@ TimingResults timeWorkingSets(std::size_t numElems, std::size_t numSets, std::si
   for (std::size_t i = 0; i < numLookups; i++) {
     std::size_t blockId = (double(i) / numLookups) * numSets;
     int index = gen(engine) + blockId * numElems / numSets;
-    
+
     queryTimer.start();
     tree.contains(index);
     queryTimer.stop();
@@ -187,7 +187,7 @@ bool checkCorrectness(std::size_t count, std::size_t lookups) {
   BST tree{probabilities};
 
   bool passed = true;
-  
+
   /* Generate a bunch of random in-range keys and confirm that we can find all
    * of them.
    */

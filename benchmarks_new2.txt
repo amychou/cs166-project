@@ -1,0 +1,521 @@
+Correctness Tests
+  Perfectly Balanced Tree:     Pass
+  Weight-Balanced Tree:        Pass
+  Splay Tree:                  Pass
+  Multi-Splay Tree:            Pass
+  std::set:                    Pass
+  Sorted Array:                Pass
+  std::unordered_set:          Pass
+
+Sequential Access - TreeSize 1
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.00ms
+  std::set:                Build time:     0.00ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 2
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.00ms
+  std::set:                Build time:     0.00ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 4
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.00ms
+  std::set:                Build time:     0.00ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 8
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.00ms
+  std::set:                Build time:     0.00ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 16
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.00ms
+  std::set:                Build time:     0.00ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 32
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.00ms
+  std::set:                Build time:     0.00ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 64
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
+  Weight-Balanced Tree:    Build time:     0.02ms  Query time:     0.00ms
+  Splay Tree:              Build time:     0.00ms  Query time:     0.00ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:     0.01ms
+  std::set:                Build time:     0.01ms  Query time:     0.00ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
+  std::unordered_set:      Build time:     0.01ms  Query time:     0.00ms
+
+Sequential Access - TreeSize 128
+  Perfectly Balanced Tree: Build time:     0.01ms  Query time:     0.01ms
+  Weight-Balanced Tree:    Build time:     0.01ms  Query time:     0.01ms
+  Splay Tree:              Build time:     0.01ms  Query time:     0.01ms
+  Multi-Splay Tree:        Build time:     0.01ms  Query time:     0.02ms
+  std::set:                Build time:     0.01ms  Query time:     0.01ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.01ms
+  std::unordered_set:      Build time:     0.01ms  Query time:     0.01ms
+
+Sequential Access - TreeSize 256
+  Perfectly Balanced Tree: Build time:     0.02ms  Query time:     0.02ms
+  Weight-Balanced Tree:    Build time:     0.03ms  Query time:     0.02ms
+  Splay Tree:              Build time:     0.02ms  Query time:     0.01ms
+  Multi-Splay Tree:        Build time:     0.02ms  Query time:     0.05ms
+  std::set:                Build time:     0.02ms  Query time:     0.02ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.02ms
+  std::unordered_set:      Build time:     0.02ms  Query time:     0.01ms
+
+Sequential Access - TreeSize 512
+  Perfectly Balanced Tree: Build time:     0.03ms  Query time:     0.04ms
+  Weight-Balanced Tree:    Build time:     0.05ms  Query time:     0.04ms
+  Splay Tree:              Build time:     0.03ms  Query time:     0.04ms
+  Multi-Splay Tree:        Build time:     0.04ms  Query time:     0.10ms
+  std::set:                Build time:     0.05ms  Query time:     0.04ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.04ms
+  std::unordered_set:      Build time:     0.05ms  Query time:     0.02ms
+
+Sequential Access - TreeSize 1024
+  Perfectly Balanced Tree: Build time:     0.07ms  Query time:     0.09ms
+  Weight-Balanced Tree:    Build time:     0.10ms  Query time:     0.08ms
+  Splay Tree:              Build time:     0.07ms  Query time:     0.06ms
+  Multi-Splay Tree:        Build time:     0.07ms  Query time:     0.21ms
+  std::set:                Build time:     0.09ms  Query time:     0.08ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.08ms
+  std::unordered_set:      Build time:     0.08ms  Query time:     0.05ms
+
+Sequential Access - TreeSize 2048
+  Perfectly Balanced Tree: Build time:     0.14ms  Query time:     0.16ms
+  Weight-Balanced Tree:    Build time:     0.19ms  Query time:     0.17ms
+  Splay Tree:              Build time:     0.14ms  Query time:     0.12ms
+  Multi-Splay Tree:        Build time:     0.14ms  Query time:     0.58ms
+  std::set:                Build time:     0.19ms  Query time:     0.17ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.16ms
+  std::unordered_set:      Build time:     0.15ms  Query time:     0.09ms
+
+Sequential Access - TreeSize 4096
+  Perfectly Balanced Tree: Build time:     0.28ms  Query time:     0.35ms
+  Weight-Balanced Tree:    Build time:     0.37ms  Query time:     0.34ms
+  Splay Tree:              Build time:     0.27ms  Query time:     0.23ms
+  Multi-Splay Tree:        Build time:     0.29ms  Query time:     1.04ms
+  std::set:                Build time:     0.40ms  Query time:     0.36ms
+  Sorted Array:            Build time:     0.02ms  Query time:     0.34ms
+  std::unordered_set:      Build time:     0.30ms  Query time:     0.19ms
+
+Sequential Access - TreeSize 8192
+  Perfectly Balanced Tree: Build time:     0.55ms  Query time:     0.72ms
+  Weight-Balanced Tree:    Build time:     0.71ms  Query time:     0.73ms
+  Splay Tree:              Build time:     0.55ms  Query time:     0.47ms
+  Multi-Splay Tree:        Build time:     0.58ms  Query time:     2.69ms
+  std::set:                Build time:     0.93ms  Query time:     0.75ms
+  Sorted Array:            Build time:     0.00ms  Query time:     0.70ms
+  std::unordered_set:      Build time:     0.67ms  Query time:     0.38ms
+
+Sequential Access - TreeSize 16384
+  Perfectly Balanced Tree: Build time:     1.11ms  Query time:     1.58ms
+  Weight-Balanced Tree:    Build time:     1.75ms  Query time:     1.57ms
+  Splay Tree:              Build time:     1.35ms  Query time:     0.95ms
+  Multi-Splay Tree:        Build time:     1.24ms  Query time:     5.49ms
+  std::set:                Build time:     2.50ms  Query time:     1.66ms
+  Sorted Array:            Build time:     0.01ms  Query time:     1.45ms
+  std::unordered_set:      Build time:     1.31ms  Query time:     0.76ms
+
+Sequential Access - TreeSize 32768
+  Perfectly Balanced Tree: Build time:     2.41ms  Query time:     3.38ms
+  Weight-Balanced Tree:    Build time:     2.94ms  Query time:     3.17ms
+  Splay Tree:              Build time:     2.34ms  Query time:     1.86ms
+  Multi-Splay Tree:        Build time:     2.58ms  Query time:    18.00ms
+  std::set:                Build time:     5.18ms  Query time:     3.94ms
+  Sorted Array:            Build time:     0.02ms  Query time:     3.28ms
+  std::unordered_set:      Build time:     2.62ms  Query time:     1.53ms
+
+Sequential Access - TreeSize 65536
+  Perfectly Balanced Tree: Build time:     4.64ms  Query time:     6.78ms
+  Weight-Balanced Tree:    Build time:     5.52ms  Query time:     6.57ms
+  Splay Tree:              Build time:     5.17ms  Query time:     3.81ms
+  Multi-Splay Tree:        Build time:     5.67ms  Query time:    31.60ms
+  std::set:                Build time:    11.49ms  Query time:     7.51ms
+  Sorted Array:            Build time:     0.05ms  Query time:     6.76ms
+  std::unordered_set:      Build time:     5.24ms  Query time:     3.09ms
+
+Sequential Access - TreeSize 131072
+  Perfectly Balanced Tree: Build time:     9.75ms  Query time:    13.99ms
+  Weight-Balanced Tree:    Build time:    12.65ms  Query time:    13.65ms
+  Splay Tree:              Build time:     9.50ms  Query time:     7.65ms
+  Multi-Splay Tree:        Build time:    11.43ms  Query time:   132.79ms
+  std::set:                Build time:    22.62ms  Query time:    15.50ms
+  Sorted Array:            Build time:     0.13ms  Query time:    20.58ms
+  std::unordered_set:      Build time:    16.83ms  Query time:     7.94ms
+
+Sequential Access - TreeSize 262144
+  Perfectly Balanced Tree: Build time:    24.60ms  Query time:    37.96ms
+  Weight-Balanced Tree:    Build time:    34.15ms  Query time:    31.76ms
+  Splay Tree:              Build time:    19.21ms  Query time:    15.29ms
+  Multi-Splay Tree:        Build time:    23.84ms  Query time:   366.50ms
+  std::set:                Build time:    48.83ms  Query time:    35.28ms
+  Sorted Array:            Build time:     0.17ms  Query time:    37.01ms
+  std::unordered_set:      Build time:    21.95ms  Query time:    12.26ms
+
+Sequential Access - TreeSize 524288
+  Perfectly Balanced Tree: Build time:    38.51ms  Query time:    59.42ms
+  Weight-Balanced Tree:    Build time:    51.35ms  Query time:    58.31ms
+  Splay Tree:              Build time:    39.04ms  Query time:    31.49ms
+  Multi-Splay Tree:        Build time:    47.28ms  Query time:   792.89ms
+  std::set:                Build time:   103.38ms  Query time:    66.00ms
+  Sorted Array:            Build time:     0.45ms  Query time:    78.95ms
+  std::unordered_set:      Build time:    52.28ms  Query time:    27.64ms
+
+Sequential Access - TreeSize 1048576
+  Perfectly Balanced Tree: Build time:    92.28ms  Query time:   127.74ms
+  Weight-Balanced Tree:    Build time:   107.82ms  Query time:   124.01ms
+  Splay Tree:              Build time:    80.92ms  Query time:    62.24ms
+  Multi-Splay Tree:        Build time:   102.29ms  Query time:  2006.34ms
+  std::set:                Build time:   225.22ms  Query time:   138.53ms
+  Sorted Array:            Build time:     2.46ms  Query time:   163.91ms
+  std::unordered_set:      Build time:    94.80ms  Query time:    49.34ms
+
+Sequential Access - TreeSize 2097152
+  Perfectly Balanced Tree: Build time:   174.34ms  Query time:   285.60ms
+  Weight-Balanced Tree:    Build time:   236.08ms  Query time:   258.58ms
+  Splay Tree:              Build time:   175.84ms  Query time:   123.59ms
+  Multi-Splay Tree:        Build time:   219.16ms  Query time:  6662.71ms
+  std::set:                Build time:   502.17ms  Query time:   292.40ms
+  Sorted Array:            Build time:     4.42ms  Query time:   369.08ms
+  std::unordered_set:      Build time:   219.45ms  Query time:   100.78ms
+
+Sequential Access - TreeSize 4194304
+  Perfectly Balanced Tree: Build time:   348.78ms  Query time:   536.15ms
+  Weight-Balanced Tree:    Build time:   454.85ms  Query time:   548.48ms
+  Splay Tree:              Build time:   335.28ms  Query time:   244.41ms
+  Multi-Splay Tree:        Build time:   421.73ms  Query time: 14092.38ms
+  std::set:                Build time:  1083.97ms  Query time:   630.29ms
+  Sorted Array:            Build time:     8.31ms  Query time:   733.00ms
+  std::unordered_set:      Build time:   428.01ms  Query time:   197.47ms
+
+Sequential Access - TreeSize 8388608
+  Perfectly Balanced Tree: Build time:   676.66ms  Query time:  1116.46ms
+  Weight-Balanced Tree:    Build time:   904.37ms  Query time:  1143.76ms
+  Splay Tree:              Build time:   690.29ms  Query time:   482.12ms
+  Multi-Splay Tree:        Build time:   909.43ms  Query time: 50655.00ms
+  std::set:                Build time:  2138.33ms  Query time:  1299.38ms
+  Sorted Array:            Build time:    21.81ms  Query time:  1537.51ms
+  std::unordered_set:      Build time:   863.83ms  Query time:   400.38ms
+
+Sequential Access - TreeSize 16777216
+  Perfectly Balanced Tree: Build time:  1503.60ms  Query time:  2329.85ms
+  Weight-Balanced Tree:    Build time:  1879.99ms  Query time:  2284.10ms
+  Splay Tree:              Build time:  1404.60ms  Query time:   999.16ms
+  Multi-Splay Tree:        Build time:  1891.36ms  Query time: 81210.62ms
+  std::set:                Build time:  4517.11ms  Query time:  2504.06ms
+  Sorted Array:            Build time:    91.01ms  Query time:  3202.73ms
+  std::unordered_set:      Build time:  1767.51ms  Query time:   781.83ms
+
+Reverse Sequential Access
+  Perfectly Balanced Tree: Build time:     6.69ms  Query time:     7.83ms
+  Weight-Balanced Tree:    Build time:     6.07ms  Query time:     7.20ms
+  Splay Tree:              Build time:     4.82ms  Query time:     4.27ms
+  Multi-Splay Tree:        Build time:     5.00ms  Query time:    54.10ms
+  std::set:                Build time:    10.46ms  Query time:     7.00ms
+  Sorted Array:            Build time:     0.03ms  Query time:     6.13ms
+  std::unordered_set:      Build time:     5.16ms  Query time:     3.05ms
+
+Working Set Access
+  Perfectly Balanced Tree: Build time:     4.61ms  Query time:    27.64ms
+  Weight-Balanced Tree:    Build time:     5.97ms  Query time:    26.70ms
+  Splay Tree:              Build time:     4.69ms  Query time:    22.58ms
+  Multi-Splay Tree:        Build time:     5.32ms  Query time:   133.11ms
+  std::set:                Build time:    10.32ms  Query time:    26.95ms
+  Sorted Array:            Build time:     0.03ms  Query time:    25.73ms
+  std::unordered_set:      Build time:     5.41ms  Query time:    12.26ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 1
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:    11.62ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:    12.24ms
+  Splay Tree:              Build time:     0.00ms  Query time:    12.24ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    12.04ms
+  std::set:                Build time:     0.00ms  Query time:    11.61ms
+  Sorted Array:            Build time:     0.00ms  Query time:    11.88ms
+  std::unordered_set:      Build time:     0.00ms  Query time:    12.01ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 2
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:    12.07ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:    12.36ms
+  Splay Tree:              Build time:     0.00ms  Query time:    13.20ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    13.46ms
+  std::set:                Build time:     0.00ms  Query time:    13.37ms
+  Sorted Array:            Build time:     0.00ms  Query time:    13.85ms
+  std::unordered_set:      Build time:     0.00ms  Query time:    12.33ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 4
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:    13.36ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:    14.14ms
+  Splay Tree:              Build time:     0.00ms  Query time:    14.76ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    17.53ms
+  std::set:                Build time:     0.00ms  Query time:    12.97ms
+  Sorted Array:            Build time:     0.00ms  Query time:    14.51ms
+  std::unordered_set:      Build time:     0.00ms  Query time:    12.20ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 8
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:    13.68ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:    13.75ms
+  Splay Tree:              Build time:     0.00ms  Query time:    16.10ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    25.76ms
+  std::set:                Build time:     0.00ms  Query time:    13.76ms
+  Sorted Array:            Build time:     0.00ms  Query time:    14.79ms
+  std::unordered_set:      Build time:     0.00ms  Query time:    12.06ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 16
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:    14.72ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:    14.81ms
+  Splay Tree:              Build time:     0.00ms  Query time:    18.09ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    35.34ms
+  std::set:                Build time:     0.00ms  Query time:    17.16ms
+  Sorted Array:            Build time:     0.00ms  Query time:    15.30ms
+  std::unordered_set:      Build time:     0.00ms  Query time:    12.15ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 32
+  Perfectly Balanced Tree: Build time:     0.00ms  Query time:    15.51ms
+  Weight-Balanced Tree:    Build time:     0.00ms  Query time:    15.67ms
+  Splay Tree:              Build time:     0.00ms  Query time:    19.81ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    48.74ms
+  std::set:                Build time:     0.00ms  Query time:    18.46ms
+  Sorted Array:            Build time:     0.00ms  Query time:    16.85ms
+  std::unordered_set:      Build time:     0.01ms  Query time:    12.75ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 64
+  Perfectly Balanced Tree: Build time:     0.01ms  Query time:    16.68ms
+  Weight-Balanced Tree:    Build time:     0.01ms  Query time:    16.61ms
+  Splay Tree:              Build time:     0.00ms  Query time:    22.42ms
+  Multi-Splay Tree:        Build time:     0.00ms  Query time:    62.79ms
+  std::set:                Build time:     0.01ms  Query time:    19.28ms
+  Sorted Array:            Build time:     0.00ms  Query time:    18.18ms
+  std::unordered_set:      Build time:     0.01ms  Query time:    12.27ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 128
+  Perfectly Balanced Tree: Build time:     0.01ms  Query time:    17.59ms
+  Weight-Balanced Tree:    Build time:     0.03ms  Query time:    17.59ms
+  Splay Tree:              Build time:     0.01ms  Query time:    25.44ms
+  Multi-Splay Tree:        Build time:     0.01ms  Query time:    87.08ms
+  std::set:                Build time:     0.01ms  Query time:    22.50ms
+  Sorted Array:            Build time:     0.00ms  Query time:    19.22ms
+  std::unordered_set:      Build time:     0.01ms  Query time:    12.91ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 256
+  Perfectly Balanced Tree: Build time:     0.02ms  Query time:    18.79ms
+  Weight-Balanced Tree:    Build time:     0.02ms  Query time:    18.65ms
+  Splay Tree:              Build time:     0.02ms  Query time:    26.47ms
+  Multi-Splay Tree:        Build time:     0.02ms  Query time:    97.76ms
+  std::set:                Build time:     0.04ms  Query time:    26.01ms
+  Sorted Array:            Build time:     0.00ms  Query time:    19.37ms
+  std::unordered_set:      Build time:     0.03ms  Query time:    12.10ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 512
+  Perfectly Balanced Tree: Build time:     0.04ms  Query time:    19.58ms
+  Weight-Balanced Tree:    Build time:     0.04ms  Query time:    19.68ms
+  Splay Tree:              Build time:     0.04ms  Query time:    29.01ms
+  Multi-Splay Tree:        Build time:     0.04ms  Query time:   127.01ms
+  std::set:                Build time:     0.05ms  Query time:    22.11ms
+  Sorted Array:            Build time:     0.00ms  Query time:    18.78ms
+  std::unordered_set:      Build time:     0.06ms  Query time:    12.19ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 1024
+  Perfectly Balanced Tree: Build time:     0.07ms  Query time:    20.67ms
+  Weight-Balanced Tree:    Build time:     0.08ms  Query time:    21.57ms
+  Splay Tree:              Build time:     0.10ms  Query time:    35.27ms
+  Multi-Splay Tree:        Build time:     0.08ms  Query time:   146.94ms
+  std::set:                Build time:     0.10ms  Query time:    25.97ms
+  Sorted Array:            Build time:     0.00ms  Query time:    19.79ms
+  std::unordered_set:      Build time:     0.08ms  Query time:    12.77ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 2048
+  Perfectly Balanced Tree: Build time:     0.14ms  Query time:    23.56ms
+  Weight-Balanced Tree:    Build time:     0.17ms  Query time:    22.84ms
+  Splay Tree:              Build time:     0.14ms  Query time:    34.63ms
+  Multi-Splay Tree:        Build time:     0.15ms  Query time:   148.50ms
+  std::set:                Build time:     0.18ms  Query time:    28.69ms
+  Sorted Array:            Build time:     0.00ms  Query time:    20.39ms
+  std::unordered_set:      Build time:     0.15ms  Query time:    12.44ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 4096
+  Perfectly Balanced Tree: Build time:     0.51ms  Query time:    27.54ms
+  Weight-Balanced Tree:    Build time:     0.33ms  Query time:    26.35ms
+  Splay Tree:              Build time:     0.27ms  Query time:    39.80ms
+  Multi-Splay Tree:        Build time:     0.31ms  Query time:   188.64ms
+  std::set:                Build time:     0.39ms  Query time:    29.31ms
+  Sorted Array:            Build time:     0.00ms  Query time:    21.83ms
+  std::unordered_set:      Build time:     0.31ms  Query time:    13.58ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 8192
+  Perfectly Balanced Tree: Build time:     0.66ms  Query time:    31.36ms
+  Weight-Balanced Tree:    Build time:     0.65ms  Query time:    33.12ms
+  Splay Tree:              Build time:     0.56ms  Query time:    42.54ms
+  Multi-Splay Tree:        Build time:     0.58ms  Query time:   248.95ms
+  std::set:                Build time:     0.82ms  Query time:    41.04ms
+  Sorted Array:            Build time:     0.00ms  Query time:    24.34ms
+  std::unordered_set:      Build time:     0.65ms  Query time:    14.24ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 16384
+  Perfectly Balanced Tree: Build time:     1.13ms  Query time:    33.15ms
+  Weight-Balanced Tree:    Build time:     1.35ms  Query time:    32.70ms
+  Splay Tree:              Build time:     1.07ms  Query time:    50.56ms
+  Multi-Splay Tree:        Build time:     1.25ms  Query time:   268.71ms
+  std::set:                Build time:     2.49ms  Query time:    45.88ms
+  Sorted Array:            Build time:     0.01ms  Query time:    26.79ms
+  std::unordered_set:      Build time:     1.18ms  Query time:    16.24ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 32768
+  Perfectly Balanced Tree: Build time:     2.23ms  Query time:    41.19ms
+  Weight-Balanced Tree:    Build time:     2.69ms  Query time:    39.73ms
+  Splay Tree:              Build time:     2.33ms  Query time:    61.88ms
+  Multi-Splay Tree:        Build time:     2.84ms  Query time:   303.38ms
+  std::set:                Build time:     4.90ms  Query time:    49.62ms
+  Sorted Array:            Build time:     0.02ms  Query time:    28.47ms
+  std::unordered_set:      Build time:     2.53ms  Query time:    18.46ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 65536
+  Perfectly Balanced Tree: Build time:     4.83ms  Query time:    41.29ms
+  Weight-Balanced Tree:    Build time:     5.33ms  Query time:    50.10ms
+  Splay Tree:              Build time:     4.40ms  Query time:    73.06ms
+  Multi-Splay Tree:        Build time:     5.06ms  Query time:   341.64ms
+  std::set:                Build time:    10.37ms  Query time:    63.99ms
+  Sorted Array:            Build time:     0.03ms  Query time:    40.83ms
+  std::unordered_set:      Build time:     4.90ms  Query time:    20.17ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 131072
+  Perfectly Balanced Tree: Build time:     9.16ms  Query time:    48.05ms
+  Weight-Balanced Tree:    Build time:    10.82ms  Query time:    47.61ms
+  Splay Tree:              Build time:     9.08ms  Query time:    82.17ms
+  Multi-Splay Tree:        Build time:    10.02ms  Query time:   424.84ms
+  std::set:                Build time:    22.92ms  Query time:    77.28ms
+  Sorted Array:            Build time:     0.07ms  Query time:    54.62ms
+  std::unordered_set:      Build time:    10.18ms  Query time:    28.26ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 262144
+  Perfectly Balanced Tree: Build time:    18.90ms  Query time:    63.32ms
+  Weight-Balanced Tree:    Build time:    23.95ms  Query time:    80.24ms
+  Splay Tree:              Build time:    19.08ms  Query time:   131.01ms
+  Multi-Splay Tree:        Build time:    21.03ms  Query time:   562.76ms
+  std::set:                Build time:    50.02ms  Query time:   133.64ms
+  Sorted Array:            Build time:     0.14ms  Query time:    62.56ms
+  std::unordered_set:      Build time:    20.07ms  Query time:    46.58ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 524288
+  Perfectly Balanced Tree: Build time:    36.67ms  Query time:    76.73ms
+  Weight-Balanced Tree:    Build time:    46.87ms  Query time:    94.93ms
+  Splay Tree:              Build time:    40.04ms  Query time:   151.20ms
+  Multi-Splay Tree:        Build time:    45.80ms  Query time:   558.70ms
+  std::set:                Build time:   103.18ms  Query time:   226.59ms
+  Sorted Array:            Build time:     0.63ms  Query time:   103.00ms
+  std::unordered_set:      Build time:    43.29ms  Query time:    57.05ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 1048576
+  Perfectly Balanced Tree: Build time:    76.33ms  Query time:   103.65ms
+  Weight-Balanced Tree:    Build time:   105.25ms  Query time:   102.90ms
+  Splay Tree:              Build time:    80.20ms  Query time:   232.30ms
+  Multi-Splay Tree:        Build time:    99.77ms  Query time:   789.62ms
+  std::set:                Build time:   227.27ms  Query time:   259.40ms
+  Sorted Array:            Build time:     2.04ms  Query time:   134.64ms
+  std::unordered_set:      Build time:    95.82ms  Query time:    65.89ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 2097152
+  Perfectly Balanced Tree: Build time:   159.16ms  Query time:   117.03ms
+  Weight-Balanced Tree:    Build time:   218.47ms  Query time:   123.19ms
+  Splay Tree:              Build time:   165.62ms  Query time:   241.68ms
+  Multi-Splay Tree:        Build time:   204.24ms  Query time:   770.23ms
+  std::set:                Build time:   473.58ms  Query time:   238.72ms
+  Sorted Array:            Build time:     3.77ms  Query time:   209.89ms
+  std::unordered_set:      Build time:   201.04ms  Query time:    71.00ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 4194304
+  Perfectly Balanced Tree: Build time:   329.25ms  Query time:   140.58ms
+  Weight-Balanced Tree:    Build time:   444.97ms  Query time:   137.60ms
+  Splay Tree:              Build time:   327.44ms  Query time:   263.70ms
+  Multi-Splay Tree:        Build time:   421.84ms  Query time:   816.58ms
+  std::set:                Build time:  1021.71ms  Query time:   279.28ms
+  Sorted Array:            Build time:     8.10ms  Query time:   245.59ms
+  std::unordered_set:      Build time:   415.30ms  Query time:    73.31ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 8388608
+  Perfectly Balanced Tree: Build time:   683.99ms  Query time:   162.72ms
+  Weight-Balanced Tree:    Build time:   877.82ms  Query time:   161.67ms
+  Splay Tree:              Build time:   669.43ms  Query time:   312.46ms
+  Multi-Splay Tree:        Build time:   840.56ms  Query time:   912.46ms
+  std::set:                Build time:  2154.18ms  Query time:   384.15ms
+  Sorted Array:            Build time:    18.64ms  Query time:   316.59ms
+  std::unordered_set:      Build time:   858.79ms  Query time:    79.31ms
+
+Accessing Elements with A Uniform Distribution - TreeSize 16777216
+  Perfectly Balanced Tree: Build time:  1383.25ms  Query time:   204.86ms
+  Weight-Balanced Tree:    Build time:  1803.97ms  Query time:   189.18ms
+  Splay Tree:              Build time:  1364.00ms  Query time:   363.22ms
+  Multi-Splay Tree:        Build time:  1698.04ms  Query time:  1197.68ms
+  std::set:                Build time:  4499.03ms  Query time:   406.51ms
+  Sorted Array:            Build time:    86.08ms  Query time:   320.79ms
+  std::unordered_set:      Build time:  1658.45ms  Query time:    90.99ms
+
+Accessing Elements with A Zipf(0.500) Distribution
+  Perfectly Balanced Tree: Build time:     5.88ms  Query time:    68.50ms
+  Weight-Balanced Tree:    Build time:     7.18ms  Query time:    60.03ms
+  Splay Tree:              Build time:     5.23ms  Query time:    98.94ms
+  Multi-Splay Tree:        Build time:     6.01ms  Query time:   430.36ms
+  std::set:                Build time:    10.92ms  Query time:   101.48ms
+  Sorted Array:            Build time:     0.04ms  Query time:    47.57ms
+  std::unordered_set:      Build time:     5.27ms  Query time:    54.09ms
+
+Accessing Elements with A Zipf(0.750) Distribution
+  Perfectly Balanced Tree: Build time:     5.60ms  Query time:    53.76ms
+  Weight-Balanced Tree:    Build time:     6.13ms  Query time:    57.85ms
+  Splay Tree:              Build time:     4.91ms  Query time:    72.28ms
+  Multi-Splay Tree:        Build time:     5.16ms  Query time:   401.14ms
+  std::set:                Build time:    11.40ms  Query time:   110.12ms
+  Sorted Array:            Build time:     0.04ms  Query time:    51.55ms
+  std::unordered_set:      Build time:     5.62ms  Query time:    30.23ms
+
+Accessing Elements with A Zipf(1.000) Distribution
+  Perfectly Balanced Tree: Build time:     4.70ms  Query time:    47.15ms
+  Weight-Balanced Tree:    Build time:     6.83ms  Query time:    48.09ms
+  Splay Tree:              Build time:     5.55ms  Query time:    65.77ms
+  Multi-Splay Tree:        Build time:     5.93ms  Query time:   314.99ms
+  std::set:                Build time:    11.41ms  Query time:    74.60ms
+  Sorted Array:            Build time:     0.03ms  Query time:    44.36ms
+  std::unordered_set:      Build time:     5.15ms  Query time:    27.52ms
+
+Accessing Elements with A Zipf(1.200) Distribution
+  Perfectly Balanced Tree: Build time:     4.67ms  Query time:    37.41ms
+  Weight-Balanced Tree:    Build time:     6.56ms  Query time:    31.15ms
+  Splay Tree:              Build time:     5.45ms  Query time:    51.38ms
+  Multi-Splay Tree:        Build time:     5.79ms  Query time:   210.32ms
+  std::set:                Build time:    11.75ms  Query time:    59.89ms
+  Sorted Array:            Build time:     0.04ms  Query time:    44.22ms
+  std::unordered_set:      Build time:     5.98ms  Query time:    24.11ms
+
+Accessing Elements with A Zipf(1.300) Distribution
+  Perfectly Balanced Tree: Build time:     5.34ms  Query time:    40.41ms
+  Weight-Balanced Tree:    Build time:     5.86ms  Query time:    23.34ms
+  Splay Tree:              Build time:     4.62ms  Query time:    30.58ms
+  Multi-Splay Tree:        Build time:     5.22ms  Query time:   238.33ms
+  std::set:                Build time:    10.68ms  Query time:    51.67ms
+  Sorted Array:            Build time:     0.04ms  Query time:    38.04ms
+  std::unordered_set:      Build time:     5.14ms  Query time:    15.79ms
