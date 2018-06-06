@@ -7,31 +7,29 @@
 /**
  * A type representing a binary search tree backed by a splay tree.
  */
-class SplayTree {
+class TangoTree {
 public:
     /**
      * Given a list of the future access probabilities of the elements 0, 1, 2,
-     * ..., weights.size() - 1, constructs a new splay tree holding those
+     * ..., weights.size() - 1, constructs a new tango tree holding those
      * elements.
      *
-     * Because splay trees rearrange their elements in response to queries, we
+     * Because tango trees rearrange their elements in response to queries, we
      * ignore the assigned probabilities here and just build a BST storing the
      * keys 0, 1, 2, ..., weights.size() - 1.
      */
-    explicit SplayTree(const std::vector<double>& weights);
+    explicit TangoTree(const std::vector<double>& weights);
 
     /**
      * Cleans up all memory allocated by the tree. Remember that destructors are
      * invoked automatically in C++, so you should never need to directly invoke
      * this member function.
      */
-    ~SplayTree();
+    ~TangoTree();
 
     /**
-     * Searches the splay tree for the given key, returning whether or not that
-     * key is present in the tree. We strongly recommend implementing this
-     * method using the top-down splaying technique outlined in Sleator and
-     * Tarjan's original paper.
+     * Searches the tango tree for the given key, returning whether or not that
+     * key is present in the tree.
      */
     bool contains(std::size_t key) const;
 
@@ -39,18 +37,24 @@ public:
      * Returns a human-readable name of this type.
      */
     static std::string name() {
-      return "Splay Tree";
+        return "Tango Tree";
     }
 
 private:
+    enum Color {RED, BLACK};
     struct Node {
         std::size_t key;
+
         Node* left;
         Node* right;
+        Node* parent;
 
-        /* Note: Since you'll be implementing top-down splaying, you should *not*
-         * add a parent pointer here. You won't be needing it.
-         */
+        int subtree_size;
+
+        bool marked;
+        Color color;
+
+        int depth, min_depth, max_depth;
     };
 
     /* Pointer to the root of the tree - which will likely change a lot!
@@ -72,21 +76,32 @@ private:
     static Node* treeFor(std::size_t low, std::size_t high);
 
     // TODO: Add any necessary new types or fields here.
+    Node* cutAndJoin(Node* node)const;
 
-    mutable Node *left, *right;
+    Node* cut(Node* node, int depth) const;
+    Node* join(Node* n1, Node* n2, int depth) const;
+    Node* split(Node* n1, Node* n2) const;
+    Node* merge(Node* n) const;
 
-    void rotate_left() const;
-    void rotate_right() const;
-    void link_left() const;
-    void link_right() const;
+    Node* findMinWithDepth(Node* n, int depth) const;
+    Node* findMaxWithDepth(Node* n, int depth) const;
+
+    Node* getPredecessorByNode(Node* n) const;
+    Node* getSuccessorByNode(Node* n) const;
+
+    Node* findMarkedPredecessor(Node* node, size_t key) const;
+
+    void updateMinMaxPath(Node* n) const;
+
+    bool isLeaf(Node* n) const;
 
     /* Fun with C++: these next two lines disable implicitly-generated copy
      * functions that would otherwise cause weird errors if you tried to
      * implicitly copy an object of this type. You don't need to touch these
      * lines.
      */
-    SplayTree(SplayTree const &) = delete;
-    void operator=(SplayTree const &) = delete;
+    TangoTree(TangoTree const &) = delete;
+    void operator=(TangoTree const &) = delete;
 };
 
 #endif

@@ -1,5 +1,6 @@
 #include "SplayTree.h"
-#include <iostream>
+#include <cassert>
+
 using namespace std;
 
 /**
@@ -12,7 +13,6 @@ using namespace std;
  * storing the elements 0, 1, 2, ..., weights.size() - 1 however you'd like.
  */
 SplayTree::SplayTree(const std::vector<double>& weights) {
-  //cout << "Building tree for " << weights.size() << " elements"<< endl;
   root = treeFor(0, weights.size());
 }
 
@@ -30,9 +30,9 @@ SplayTree::treeFor(size_t low, size_t high) {
    */
   size_t mid = low + (high - low) / 2;
   return new Node {
-    mid,
-    treeFor(low, mid),
-    treeFor(mid + 1, high)
+          mid,
+          treeFor(low, mid),
+          treeFor(mid + 1, high)
   };
 }
 
@@ -50,9 +50,9 @@ SplayTree::~SplayTree() {
       delete root;
       root = next;
     }
-    /* Otherwise, the root has a left subtree. Do a right rotation to move
-     * that child to the left.
-     */
+      /* Otherwise, the root has a left subtree. Do a right rotation to move
+       * that child to the left.
+       */
     else {
       Node* child = root->left;
       root->left = child->right;
@@ -62,44 +62,30 @@ SplayTree::~SplayTree() {
   }
 }
 
-void SplayTree::assemble(Node* curr, Node* L, Node* R, Node* rootL, Node* rootR) {
-  if (L != nullptr) L->right = curr->left;
-  if (R != nullptr) R->left = curr->right;
-  if (rootL != nullptr) curr->left = rootL;
-  if (rootR != nullptr) curr->right = rootR;
-  root = curr;
+void SplayTree::rotate_left() const {
+  Node *temp = root->right;
+  root->right = temp->left;
+  temp->left = root;
+  root = temp;
 }
 
-void SplayTree::rotateRight(Node** curr) {
-  Node* X = *curr;
-  Node* Y = X->left;
-  X->left = Y->right;
-  Y->right = X;
-  *curr = Y;
+void SplayTree::rotate_right() const {
+  Node *temp = root->left;
+  root->left = temp->right;
+  temp->right = root;
+  root = temp;
 }
 
-void SplayTree::rotateLeft(Node** curr) {
-  Node* X = *curr;
-  Node* Y = X->right;
-  X->right = Y->left;
-  Y->left = X;
-  *curr = Y;
+void SplayTree::link_left() const {
+  left->right = root;
+  left = root;
+  root = root->right;
 }
 
-void SplayTree::linkRight(Node** curr, Node** R, Node** rootR) {
-  if (*R != nullptr) (*R)->left = *curr;
-  else *rootR = *curr;
-  *R = *curr;
-  *curr = (*curr)->left;
-  (*R)->left = nullptr;
-}
-
-void SplayTree::linkLeft(Node** curr, Node** L, Node** rootL) {
-  if (*L != nullptr) (*L)->right = *curr;
-  else *rootL = *curr;
-  *L = *curr;
-  *curr = (*curr)->right;
-  (*L)->right = nullptr;
+void SplayTree::link_right() const {
+  right->left = root;
+  right = root;
+  root = root->left;
 }
 
 /**
@@ -108,65 +94,60 @@ void SplayTree::linkLeft(Node** curr, Node** L, Node** rootL) {
  * top-down splaying approach described in Sleator and Tarjan's paper,
  * tracing through it, and coding it up.
  */
-bool SplayTree::contains(size_t key) {
-  Node* L = nullptr;
-  Node* R = nullptr;
-  Node* rootR = nullptr;
-  Node* rootL = nullptr;
-  Node* curr = root;
-  while (curr != nullptr) {
-    if (key < curr->key) {
-      if (curr->left == nullptr) {
-        assemble(curr, L, R, rootL, rootR);
-        return false;
-      } else if (key == curr->left->key) { // Zig
-        linkRight(&curr, &R, &rootR);
-      } else if (key < curr->left->key) { // Zig-Zig
-        if (curr->left->left == nullptr) {
-          linkRight(&curr, &R, &rootR);
-          assemble(curr, L, R, rootL, rootR);
-          return false;
-        }
-        rotateRight(&curr);
-        linkRight(&curr, &R, &rootR);
-      } else {
-        if (curr->left->right == nullptr) {
-          linkRight(&curr, &R, &rootR);
-          assemble(curr, L, R, rootL, rootR);
-          return false;
-        }
-        linkRight(&curr, &R, &rootR); // Zig-Zag
-        linkLeft(&curr, &L, &rootL);
+bool SplayTree::contains(size_t key) const {
+  Node aux_roots; // aux_roots stores the roots of trees L and R
+
+  left = right = &aux_roots;
+  // left stores bottom right of L, right stores bottom left of R
+
+  aux_roots.left = aux_roots.right = NULL;
+  // aux_roots.left will end up storing the root of R and vice-versa
+
+  bool found = false;
+  while (true) {
+    if (key < root->key) {
+      if (root->left == NULL) break;
+
+      if (key < root->left->key) {
+        rotate_right(); // zig-zig encountered, rotate right first
+        if (root->left == NULL) break;
       }
-    } else if (key > curr->key) {
-      if (curr->right == nullptr) {
-        assemble(curr, L, R, rootL, rootR);
-        return false;
-      } else if (key == curr->right->key) { // Zag
-        linkLeft(&curr, &L, &rootL);
-      } else if (key > curr->right->key) { // Zag-Zag
-        if (curr->right->right == nullptr) {
-          linkLeft(&curr, &L, &rootL);
-          assemble(curr, L, R, rootL, rootR);
-          return false;
-        }
-        rotateLeft(&curr);
-        linkLeft(&curr, &L, &rootL);
-      } else { //Zag-Zig
-        if (curr->right->left == nullptr) {
-          linkLeft(&curr, &L, &rootL);
-          assemble(curr, L, R, rootL, rootR);
-          return false;
-        }
-        linkLeft(&curr, &L, &rootL);
-        linkRight(&curr, &R, &rootR);
+
+      link_right();
+
+      if (key > root->key) {
+        if (root->right == NULL) break;
+
+        // zig-zag encountered, link left as well
+        link_left();
       }
-    }
-    if (curr->key == key) {
-      assemble(curr, L, R, rootL, rootR);
-      return true;
+    } else if (root->key < key) {
+      if (root->right == NULL) break;
+
+      if (root->right->key < key) {
+        rotate_left(); // zig-zig encountered, rotate left first
+        if (root->right == NULL) break;
+      }
+
+      link_left();
+
+      if (key < root->key) {
+        if (root->left == NULL) break;
+
+        // zig-zag encountered, link right as well
+        link_right();
+      }
+    } else {
+      found = true;
+      break;
     }
   }
-  assemble(curr, L, R, rootL, rootR);
-  return false;
+
+  // assemble
+  left->right = root->left;
+  right->left = root->right;
+  root->left = aux_roots.right;
+  root->right = aux_roots.left;
+
+  return found;
 }
