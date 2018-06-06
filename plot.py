@@ -11,7 +11,7 @@ def process(filename):
         while line:
             if (line.startswith("Sequential Access")):
                 times = []
-                for i in range(7):
+                for i in range(8):
                     line = fp.readline()
                     time = float(line.split()[-1][:-2])
                     if (time == 0):
@@ -37,6 +37,7 @@ plt.plot(uni[:,3], '-o', label='Multi-Splay Tree')
 plt.plot(uni[:,4], '-o', label='std::set')
 plt.plot(uni[:,5], '-o', label='Sorted Array')
 plt.plot(uni[:,6], '-o', label='std::unordered_set')
+
 plt.title("Runtime of 2^18 Uniform Queries")
 plt.xlabel('Log2 of Number of Elements')
 plt.ylabel('Milleseconds')
@@ -52,10 +53,12 @@ plt.plot(np.arange(7, 25), np.log2(seq[7:,3]), '-o', label='Multi-Splay Tree')
 plt.plot(np.arange(7, 25), np.log2(seq[7:,4]), '-o', label='std::set')
 plt.plot(np.arange(7, 25), np.log2(seq[7:,5]), '-o', label='Sorted Array')
 plt.plot(np.arange(7, 25), np.log2(seq[7:,6]), '-o', label='std::unordered_set')
+plt.plot(np.arange(7, 25), np.log2(seq[7:,7]), '-o', label='Tango Trees')
 plt.title("Runtime of Sequential Queries on All Elements")
 plt.xlabel('Log2 of Number of Elements')
 plt.ylabel('Log2 of Milleseconds')
 plt.legend()
 plt.xticks(range(7, 25))
+plt.show()
 plt.savefig("sequential.png")
 plt.close()
