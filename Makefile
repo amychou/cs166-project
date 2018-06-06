@@ -1,4 +1,4 @@
-CXXFLAGS = -std=c++14 -Wall -Werror -Wpedantic -Ofast -g
+CXXFLAGS = -std=c++14 -Wall -Werror -Wpedantic -O0 -g
 CXX = g++
 
 OBJECTS = SplayTree.o MultiSplayTree.o WeightBalancedTree.o StdSetTree.o Timing.o PerfectlyBalancedTree.o HashTable.o SortedArray.o
