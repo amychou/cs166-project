@@ -6,6 +6,7 @@ Correctness Tests
   std::set:                    Pass
   Sorted Array:                Pass
   std::unordered_set:          Pass
+  Tango Tree:		       Pass
 
 Sequential Access - TreeSize 1
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
@@ -15,7 +16,8 @@ Sequential Access - TreeSize 1
   std::set:                Build time:     0.00ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
-
+  Tango Tree:		   Build time: 	   0.00ms  Query time:	   0.00ms
+  
 Sequential Access - TreeSize 2
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
   Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
@@ -24,6 +26,7 @@ Sequential Access - TreeSize 2
   std::set:                Build time:     0.00ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   0.00ms
 
 Sequential Access - TreeSize 4
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
@@ -33,6 +36,7 @@ Sequential Access - TreeSize 4
   std::set:                Build time:     0.00ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   0.00ms
 
 Sequential Access - TreeSize 8
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
@@ -42,7 +46,8 @@ Sequential Access - TreeSize 8
   std::set:                Build time:     0.00ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
-
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   0.00ms
+  
 Sequential Access - TreeSize 16
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
   Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
@@ -51,7 +56,8 @@ Sequential Access - TreeSize 16
   std::set:                Build time:     0.00ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
-
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   0.00ms
+    
 Sequential Access - TreeSize 32
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
   Weight-Balanced Tree:    Build time:     0.00ms  Query time:     0.00ms
@@ -60,6 +66,7 @@ Sequential Access - TreeSize 32
   std::set:                Build time:     0.00ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.00ms  Query time:     0.00ms
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   0.00ms
 
 Sequential Access - TreeSize 64
   Perfectly Balanced Tree: Build time:     0.00ms  Query time:     0.00ms
@@ -69,6 +76,7 @@ Sequential Access - TreeSize 64
   std::set:                Build time:     0.01ms  Query time:     0.00ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.00ms
   std::unordered_set:      Build time:     0.01ms  Query time:     0.00ms
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   0.00ms
 
 Sequential Access - TreeSize 128
   Perfectly Balanced Tree: Build time:     0.01ms  Query time:     0.01ms
@@ -78,7 +86,8 @@ Sequential Access - TreeSize 128
   std::set:                Build time:     0.01ms  Query time:     0.01ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.01ms
   std::unordered_set:      Build time:     0.01ms  Query time:     0.01ms
-
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   4.98ms
+    
 Sequential Access - TreeSize 256
   Perfectly Balanced Tree: Build time:     0.02ms  Query time:     0.02ms
   Weight-Balanced Tree:    Build time:     0.03ms  Query time:     0.02ms
@@ -87,6 +96,7 @@ Sequential Access - TreeSize 256
   std::set:                Build time:     0.02ms  Query time:     0.02ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.02ms
   std::unordered_set:      Build time:     0.02ms  Query time:     0.01ms
+  Tango Tree:		   Build time:	   0.00ms  Query time:	   5.55ms
 
 Sequential Access - TreeSize 512
   Perfectly Balanced Tree: Build time:     0.03ms  Query time:     0.04ms
@@ -96,6 +106,7 @@ Sequential Access - TreeSize 512
   std::set:                Build time:     0.05ms  Query time:     0.04ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.04ms
   std::unordered_set:      Build time:     0.05ms  Query time:     0.02ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   7.61ms	
 
 Sequential Access - TreeSize 1024
   Perfectly Balanced Tree: Build time:     0.07ms  Query time:     0.09ms
@@ -105,6 +116,7 @@ Sequential Access - TreeSize 1024
   std::set:                Build time:     0.09ms  Query time:     0.08ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.08ms
   std::unordered_set:      Build time:     0.08ms  Query time:     0.05ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   7.94ms
 
 Sequential Access - TreeSize 2048
   Perfectly Balanced Tree: Build time:     0.14ms  Query time:     0.16ms
@@ -114,6 +126,7 @@ Sequential Access - TreeSize 2048
   std::set:                Build time:     0.19ms  Query time:     0.17ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.16ms
   std::unordered_set:      Build time:     0.15ms  Query time:     0.09ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   12.25ms
 
 Sequential Access - TreeSize 4096
   Perfectly Balanced Tree: Build time:     0.28ms  Query time:     0.35ms
@@ -123,6 +136,7 @@ Sequential Access - TreeSize 4096
   std::set:                Build time:     0.40ms  Query time:     0.36ms
   Sorted Array:            Build time:     0.02ms  Query time:     0.34ms
   std::unordered_set:      Build time:     0.30ms  Query time:     0.19ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   31.96ms
 
 Sequential Access - TreeSize 8192
   Perfectly Balanced Tree: Build time:     0.55ms  Query time:     0.72ms
@@ -132,6 +146,7 @@ Sequential Access - TreeSize 8192
   std::set:                Build time:     0.93ms  Query time:     0.75ms
   Sorted Array:            Build time:     0.00ms  Query time:     0.70ms
   std::unordered_set:      Build time:     0.67ms  Query time:     0.38ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   50.26ms
 
 Sequential Access - TreeSize 16384
   Perfectly Balanced Tree: Build time:     1.11ms  Query time:     1.58ms
@@ -141,6 +156,7 @@ Sequential Access - TreeSize 16384
   std::set:                Build time:     2.50ms  Query time:     1.66ms
   Sorted Array:            Build time:     0.01ms  Query time:     1.45ms
   std::unordered_set:      Build time:     1.31ms  Query time:     0.76ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   66.42ms
 
 Sequential Access - TreeSize 32768
   Perfectly Balanced Tree: Build time:     2.41ms  Query time:     3.38ms
@@ -150,6 +166,7 @@ Sequential Access - TreeSize 32768
   std::set:                Build time:     5.18ms  Query time:     3.94ms
   Sorted Array:            Build time:     0.02ms  Query time:     3.28ms
   std::unordered_set:      Build time:     2.62ms  Query time:     1.53ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   72.24ms
 
 Sequential Access - TreeSize 65536
   Perfectly Balanced Tree: Build time:     4.64ms  Query time:     6.78ms
@@ -159,6 +176,7 @@ Sequential Access - TreeSize 65536
   std::set:                Build time:    11.49ms  Query time:     7.51ms
   Sorted Array:            Build time:     0.05ms  Query time:     6.76ms
   std::unordered_set:      Build time:     5.24ms  Query time:     3.09ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   110.04ms
 
 Sequential Access - TreeSize 131072
   Perfectly Balanced Tree: Build time:     9.75ms  Query time:    13.99ms
@@ -168,6 +186,7 @@ Sequential Access - TreeSize 131072
   std::set:                Build time:    22.62ms  Query time:    15.50ms
   Sorted Array:            Build time:     0.13ms  Query time:    20.58ms
   std::unordered_set:      Build time:    16.83ms  Query time:     7.94ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   240.55ms
 
 Sequential Access - TreeSize 262144
   Perfectly Balanced Tree: Build time:    24.60ms  Query time:    37.96ms
@@ -177,6 +196,7 @@ Sequential Access - TreeSize 262144
   std::set:                Build time:    48.83ms  Query time:    35.28ms
   Sorted Array:            Build time:     0.17ms  Query time:    37.01ms
   std::unordered_set:      Build time:    21.95ms  Query time:    12.26ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   473.16ms	
 
 Sequential Access - TreeSize 524288
   Perfectly Balanced Tree: Build time:    38.51ms  Query time:    59.42ms
@@ -186,6 +206,7 @@ Sequential Access - TreeSize 524288
   std::set:                Build time:   103.38ms  Query time:    66.00ms
   Sorted Array:            Build time:     0.45ms  Query time:    78.95ms
   std::unordered_set:      Build time:    52.28ms  Query time:    27.64ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   1028.56ms
 
 Sequential Access - TreeSize 1048576
   Perfectly Balanced Tree: Build time:    92.28ms  Query time:   127.74ms
@@ -195,6 +216,7 @@ Sequential Access - TreeSize 1048576
   std::set:                Build time:   225.22ms  Query time:   138.53ms
   Sorted Array:            Build time:     2.46ms  Query time:   163.91ms
   std::unordered_set:      Build time:    94.80ms  Query time:    49.34ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   2069.30ms
 
 Sequential Access - TreeSize 2097152
   Perfectly Balanced Tree: Build time:   174.34ms  Query time:   285.60ms
@@ -204,6 +226,7 @@ Sequential Access - TreeSize 2097152
   std::set:                Build time:   502.17ms  Query time:   292.40ms
   Sorted Array:            Build time:     4.42ms  Query time:   369.08ms
   std::unordered_set:      Build time:   219.45ms  Query time:   100.78ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   4405.17ms
 
 Sequential Access - TreeSize 4194304
   Perfectly Balanced Tree: Build time:   348.78ms  Query time:   536.15ms
@@ -213,6 +236,7 @@ Sequential Access - TreeSize 4194304
   std::set:                Build time:  1083.97ms  Query time:   630.29ms
   Sorted Array:            Build time:     8.31ms  Query time:   733.00ms
   std::unordered_set:      Build time:   428.01ms  Query time:   197.47ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   8954.51ms
 
 Sequential Access - TreeSize 8388608
   Perfectly Balanced Tree: Build time:   676.66ms  Query time:  1116.46ms
@@ -222,6 +246,7 @@ Sequential Access - TreeSize 8388608
   std::set:                Build time:  2138.33ms  Query time:  1299.38ms
   Sorted Array:            Build time:    21.81ms  Query time:  1537.51ms
   std::unordered_set:      Build time:   863.83ms  Query time:   400.38ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   18195.63ms
 
 Sequential Access - TreeSize 16777216
   Perfectly Balanced Tree: Build time:  1503.60ms  Query time:  2329.85ms
@@ -231,6 +256,7 @@ Sequential Access - TreeSize 16777216
   std::set:                Build time:  4517.11ms  Query time:  2504.06ms
   Sorted Array:            Build time:    91.01ms  Query time:  3202.73ms
   std::unordered_set:      Build time:  1767.51ms  Query time:   781.83ms
+    Tango Tree:		   Build time:	   0.00ms  Query time:	   37391.78ms
 
 Reverse Sequential Access
   Perfectly Balanced Tree: Build time:     6.69ms  Query time:     7.83ms

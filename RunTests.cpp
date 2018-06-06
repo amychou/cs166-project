@@ -6,6 +6,7 @@
 #include "WeightBalancedTree.h"
 #include "MultiSplayTree.h"
 #include "Timing.h"
+#include "Tango.h"
 #include <iostream>
 #include <cstddef>
 #include <iomanip>

@@ -45,14 +45,33 @@ class Tango{
   bool search(size_t key);
   Node** cut(Node* root, std::size_t depth);
   Node* join(Node* n1, Node* n2);
-  
-  Node* concatenate(Node* n1, Node* n2);
+
+  Node* concatenate(Node* n);
+  Node* join(Node* n1, Node* n2, Node* k);
   Node* split(Node* root, Node* k);
-  void insert(Node* n);
-  void insert_recurse(Node* root, Node* n);
+  
+  //void insert(Node* n);
+  //void insert_recurse(Node* root, Node* n);
+  void insert_repair(Node* n);
   void rotate_left(Node* n);
   void rotate_right(Node* n);
   void check(Node* r);
+
+  size_t bheight(Node* m){
+    size_t h = 0;
+    Node* n = m;
+    while (n && !n->is_root){
+      if (!n->is_red)
+	h++;
+      n = n->left;
+    }
+    return h;
+  }
+
+  void mark(Node* n){
+    n->is_root = true;
+    n->is_red = false;
+  }
 
   Tango(Tango const &) = delete;
   void operator=(Tango const &) = delete;
